@@ -55,7 +55,7 @@ dependencies = [
  "barretenberg-sys",
  "bincode",
  "blake2",
- "dirs 3.0.2",
+ "bytes",
  "futures-util",
  "getrandom",
  "indicatif",
@@ -728,15 +728,6 @@ checksum = "8168378f4e5023e7218c89c891c0fd8ecdb5e5e4f18cb78f38cf245dd021e76f"
 dependencies = [
  "block-buffer 0.10.4",
  "crypto-common",
-]
-
-[[package]]
-name = "dirs"
-version = "3.0.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "30baa043103c9d0c2a57cf537cc2f35623889dc0d405e6c3cccfadbc81c71309"
-dependencies = [
- "dirs-sys",
 ]
 
 [[package]]
@@ -2186,7 +2177,7 @@ version = "2.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ccc8076840c4da029af4f87e4e8daeb0fca6b87bbb02e10cb60b791450e11e4"
 dependencies = [
- "dirs 4.0.0",
+ "dirs",
 ]
 
 [[package]]
@@ -3135,4 +3126,4 @@ dependencies = [
 [[patch.unused]]
 name = "acvm"
 version = "0.10.3"
-source = "git+https://github.com/noir-lang/acvm?rev=99746c5ac35bce1d54318b06efd3f8603af08b2c#99746c5ac35bce1d54318b06efd3f8603af08b2c"
+source = "git+https://github.com/noir-lang/acvm?rev=3ef2044147a9e537196ae538880eba9d6c554cfe#3ef2044147a9e537196ae538880eba9d6c554cfe"
