@@ -877,7 +877,7 @@ impl TryFrom<&Circuit> for ConstraintSystem {
                             public_key_x: public_key_x_inputs,
                             public_key_y: public_key_y_inputs,
                             signature: signature_inputs,
-                            message,
+                            hashed_message: hashed_message_inputs,
                             output,
                         } => {
                             // public key x
@@ -914,7 +914,7 @@ impl TryFrom<&Circuit> for ConstraintSystem {
 
                             // The rest of the input is the message
                             let mut hashed_message = Vec::new();
-                            for msg in message.iter() {
+                            for msg in hashed_message_inputs.iter() {
                                 let msg_byte_index = msg.witness.witness_index() as i32;
                                 hashed_message.push(msg_byte_index);
                             }
